@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Under Construction</title>
+    <style>
+        /* General Styles */
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #2e2e2e, #4a4d4d);
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            color: #ffffff;
+            overflow: hidden;
+            position: relative;
+        }
+
+        /* Container Styles */
+        .container {
+            text-align: center;
+            position: relative;
+            z-index: 2;
+        }
+
+        /* Heading Styles */
+        h1 {
+            font-size: 3.5rem; /* Reduced heading size */
+            text-shadow: 4px 4px 12px rgba(0, 0, 0, 0.7);
+            margin: 0;
+            color: #ffffff;
+        }
+
+        h1 span {
+            display: inline-block;
+            color: #f5d042;
+            text-shadow: 4px 4px 15px rgba(245, 208, 66, 0.7);
+            transform: rotate(-2deg);
+        }
+
+        /* Subheading Styles */
+        .stay-tune {
+            font-size: 1rem;
+            margin-top: 5px;
+            color: #cfcfcf;
+        }
+
+        /* Image Styles */
+        .image-container {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+        }
+
+        .image-container img {
+            max-width: 200px;
+            height: auto;
+        }
+
+        /* Footer Text Styles */
+        .footer-text {
+            position: fixed;
+            bottom: 0px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 1rem;
+            color: #e0e0e0;
+            text-align: center;
+        }
+
+        /* Responsive Styles */
+        @media screen and (max-width: 768px) {
+            h1 {
+                font-size: 3rem;
+            }
+            .image-container img {
+                max-width: 100px;
+            }
+            .footer-text {
+                left: 120px;
+                font-size: 0.9rem;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+            .image-container img {
+                max-width: 80px;
+            }
+            .footer-text {
+                left: 100px;
+                font-size: 0.8rem;
+            }
+        }
+
+        /* Background Animation */
+        .background-animation {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 200px;
+            height: 200px;
+            margin-top: -100px;
+            margin-left: -100px;
+            border: 15px solid rgba(161, 107, 233, 0.2);
+            border-radius: 50%;
+            border-top: 15px solid rgba(134, 136, 136, 0.8);
+            animation: spin 6s linear infinite;
+            z-index: 1;
+        }
+
+        }
+
+        .background-gradient {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(120deg, #6d6d6d, #444444, #1c1c1c);
+            background-size: 200% 200%;
+            animation: gradientShift 6s infinite alternate;
+            z-index: 0;
+            opacity: 0.5;
+        }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Oops! This website is currently <span>under construction!</span></h1>
+        <p class="stay-tune">Stay tuned for something amazing!</p>
+        <div class="image-container">
+            <img src="images/manisha.png" alt="Under Construction">
+        </div>
+        <p class="footer-text">Manisha will be here soon</p>
+    </div>
+    <div class="background-animation"></div>
+    <div class="background-gradient"></div>
+</body>
+</html>
